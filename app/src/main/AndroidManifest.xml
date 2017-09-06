@@ -9,13 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <!--ini main activity nya di declare pertama-->
+        <activity android:name=".MainActivity"
+                android:label="@string/app_name" />
+
+        <!--nah disini splashscreen activity nya-->
+        <activity android:name=".SplashScreenActivity"
+            android:noHistory="true"
+            android:theme="@style/FullscreenTheme">
+            <!--Nah di atas kan ada android:theme, nah tema nya ini diambil dari styles.xml yang name nya 'FullscreenTheme'-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--sampe sini-->
     </application>
 
 </manifest>
