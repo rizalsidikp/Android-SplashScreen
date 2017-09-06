@@ -8,4 +8,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--create your own style-->
+    <!--ganti nama style terserah pake apa namanya-->
+    <!--nanti settingan ini tema nya di pake di AndroidManifest.xml-->
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <!--ini biar gaada judul nya-->
+        <item name="windowNoTitle">true</item>
+        <!--ini biar gaada action bar nya (kalo gasalah action bar itu yg batre sama pemberitahuan)-->
+        <item name="windowActionBar">false</item>
+        <!--ini biar full screen-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
 </resources>
